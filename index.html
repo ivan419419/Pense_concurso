@@ -254,10 +254,15 @@
     padding:14px 16px;
     display:flex;
     justify-content:space-between;
+    gap:12px;
     font-size:13.5px;
     color:rgba(251,247,236,0.5);
     font-family:'IBM Plex Mono', monospace;
   }
+  .ghost-row.article-link{color:var(--paper);text-decoration:none;}
+  .ghost-row.article-link span:first-child{min-width:0;}
+  .ghost-row.article-link:hover{color:var(--gold);}
+  .ghost-row.article-link:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 
   footer{
     max-width:920px;
@@ -387,7 +392,7 @@
       <h3>Próximas publicações</h3>
       <p>Este espaço vai reunir novos concursos e processos seletivos abertos em Goiás e no Brasil, sempre com resumo de vagas, requisitos e prazos.</p>
       <div class="ghost-list">
-        <div class="ghost-row"><span>Em breve</span><span>Novo post</span></div>
+        <a class="ghost-row article-link" href="adverbios-concursos.html"><span>Português · 4 armadilhas com menos, meio, bastante e vírgula</span><span>Leia →</span></a>
         <div class="ghost-row"><span>Em breve</span><span>Novo post</span></div>
         <div class="ghost-row"><span>Em breve</span><span>Novo post</span></div>
       </div>
