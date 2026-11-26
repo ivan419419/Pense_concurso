@@ -3,406 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pense Concurso | Dicas rápidas de Português para concursos</title>
-<meta name="description" content="Perfil de dicas rápidas de Língua Portuguesa para concurseiros: gramática, redação, interpretação de textos e questões comentadas. Veja também informações sobre o concurso da Educação de Aparecida de Goiânia.">
+<title>Dica Clara | Português e estudo para concursos</title>
+<meta name="description" content="Dicas rápidas de Língua Portuguesa e estratégias simples de estudo para concursos públicos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#0F1E38;
-    --ink-light:#16294A;
-    --paper:#FBF7EC;
-    --paper-dim:#F1ECDC;
-    --gold:#C99A3B;
-    --gold-dark:#8A6A22;
-    --teal:#2F6F63;
-    --stamp:#A23B2E;
-    --text-dark:#20201C;
-    --text-muted:#6B6A63;
-    --rule: rgba(15,30,56,0.14);
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--ink);
-    color:var(--paper);
-    font-family:'IBM Plex Sans', sans-serif;
-  }
-  a{color:inherit;}
-
-  /* ---------- top bar ---------- */
-  .topbar{
-    max-width:920px;
-    margin:0 auto;
-    padding:28px 24px 18px;
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    border-bottom:1px solid rgba(251,247,236,0.16);
-  }
-  .brand{
-    font-family:'Fraunces', serif;
-    font-weight:700;
-    font-size:22px;
-    letter-spacing:0.01em;
-  }
-  .brand span{color:var(--gold);}
-  .tagline{
-    font-size:12.5px;
-    color:rgba(251,247,236,0.6);
-    font-family:'IBM Plex Mono', monospace;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-  }
-
-  /* ---------- hero ---------- */
-  .hero{
-    max-width:920px;
-    margin:0 auto;
-    padding:56px 24px 40px;
-    display:grid;
-    grid-template-columns:1fr 170px;
-    gap:36px;
-    align-items:center;
-  }
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    letter-spacing:0.09em;
-    text-transform:uppercase;
-    color:var(--gold);
-    margin:0 0 14px;
-  }
-  h1{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:40px;
-    line-height:1.12;
-    margin:0 0 18px;
-    color:var(--paper);
-  }
-  .dek{
-    font-size:16.5px;
-    line-height:1.6;
-    color:rgba(251,247,236,0.78);
-    margin:0;
-    max-width:52ch;
-  }
-  .stamp{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:2.5px solid var(--gold);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    transform:rotate(-8deg);
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--gold);
-    text-align:center;
-    flex-shrink:0;
-  }
-  .stamp .num{
-    font-family:'Fraunces', serif;
-    font-weight:700;
-    font-size:34px;
-    line-height:1;
-  }
-  .stamp .lbl{
-    font-size:10.5px;
-    letter-spacing:0.08em;
-    margin-top:6px;
-  }
-
-  /* ---------- paper section ---------- */
-  .paper{
-    background:var(--paper);
-    color:var(--text-dark);
-  }
-  .paper-inner{
-    max-width:920px;
-    margin:0 auto;
-    padding:44px 24px 20px;
-  }
-
-  /* quick facts strip */
-  .facts{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:1px;
-    background:var(--rule);
-    border:1px solid var(--rule);
-    margin-bottom:48px;
-  }
-  .fact{
-    background:var(--paper);
-    padding:18px 16px;
-  }
-  .fact .k{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:10.5px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    color:var(--text-muted);
-    margin-bottom:8px;
-  }
-  .fact .v{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:19px;
-    line-height:1.25;
-  }
-
-  /* article body, gazette style */
-  .article{
-    max-width:640px;
-    margin:0 auto 8px;
-    font-size:16.5px;
-    line-height:1.75;
-  }
-  .article p{margin:0 0 22px;}
-  .clause{
-    display:grid;
-    grid-template-columns:64px 1fr;
-    gap:18px;
-    margin-bottom:34px;
-    padding-bottom:34px;
-    border-bottom:1px solid var(--rule);
-  }
-  .clause:last-child{border-bottom:none;}
-  .clause .art{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:15px;
-    color:var(--gold-dark);
-    padding-top:3px;
-  }
-  .clause h2{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:21px;
-    margin:0 0 12px;
-    color:var(--ink);
-  }
-  .clause p{margin:0 0 14px;}
-  .clause ul{margin:0 0 14px;padding-left:20px;}
-  .clause li{margin-bottom:6px;}
-  .highlight{
-    background:rgba(201,154,59,0.14);
-    padding:2px 5px;
-    border-radius:2px;
-  }
-  .callout{
-    border-left:3px solid var(--stamp);
-    background:rgba(162,59,46,0.06);
-    padding:14px 18px;
-    font-size:15px;
-    color:var(--text-dark);
-    margin:0 0 14px;
-  }
-  .callout b{color:var(--stamp);}
-
-  /* sources */
-  .sources{
-    max-width:640px;
-    margin:0 auto 56px;
-    padding-top:28px;
-    border-top:1px solid var(--rule);
-  }
-  .sources .k{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:10.5px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    color:var(--text-muted);
-    margin-bottom:10px;
-  }
-  .sources ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--text-muted);}
-  .sources li{margin-bottom:5px;}
-
-  /* upcoming */
-  .upcoming{
-    background:var(--ink-light);
-    color:var(--paper);
-  }
-  .upcoming-inner{
-    max-width:920px;
-    margin:0 auto;
-    padding:48px 24px 56px;
-  }
-  .upcoming h3{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:20px;
-    margin:0 0 6px;
-  }
-  .upcoming p{
-    font-size:14.5px;
-    color:rgba(251,247,236,0.66);
-    margin:0 0 24px;
-    max-width:52ch;
-  }
-  .ghost-list{
-    display:grid;
-    gap:1px;
-    background:rgba(251,247,236,0.14);
-    border:1px solid rgba(251,247,236,0.14);
-  }
-  .ghost-row{
-    background:var(--ink-light);
-    padding:14px 16px;
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-    font-size:13.5px;
-    color:rgba(251,247,236,0.5);
-    font-family:'IBM Plex Mono', monospace;
-  }
-  .ghost-row.article-link{color:var(--paper);text-decoration:none;}
-  .ghost-row.article-link span:first-child{min-width:0;}
-  .ghost-row.article-link:hover{color:var(--gold);}
-  .ghost-row.article-link:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
-
-  footer{
-    max-width:920px;
-    margin:0 auto;
-    padding:26px 24px 40px;
-    font-size:12.5px;
-    color:rgba(251,247,236,0.4);
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-
-  @media (max-width:640px){
-    .hero{grid-template-columns:1fr;}
-    .stamp{transform:rotate(-6deg);width:120px;height:120px;}
-    .stamp .num{font-size:26px;}
-    h1{font-size:30px;}
-    .facts{grid-template-columns:repeat(2,1fr);}
-    .clause{grid-template-columns:1fr;gap:6px;}
-  }
-</style>
-<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "49c7e5d6283848708173839c3e692943"}'></script><!-- End Cloudflare Web Analytics -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="topbar">
-    <div>
-      <div class="brand">pense<span>_</span>concurso</div>
-    </div>
-    <div class="tagline">Português para concursos · Dicas rápidas</div>
+    <div><div class="brand">Dica<span> Clara</span></div></div>
+    <div class="tagline">Português para concursos · estudo prático</div>
   </div>
 
   <div class="hero">
     <div>
-      <p class="eyebrow">Concurso público · Educação · Goiás</p>
-      <h1>Aparecida abre concurso da Educação com 2.956 vagas imediatas</h1>
-      <p class="dek">O edital da Secretaria Municipal de Educação prevê ainda 14.780 oportunidades em cadastro de reserva. As inscrições vão até 9 de dezembro de 2026; as provas estão marcadas para janeiro de 2027.</p>
+      <p class="eyebrow">Dicas rápidas · Português · Concursos</p>
+      <h1>Estude com clareza. Avance um passo por vez.</h1>
+      <p class="dek">Revisões curtas, gramática explicada com exemplos e estratégias simples para transformar o edital em um plano possível de seguir.</p>
     </div>
     <div class="stamp">
-      <div class="num">2.956</div>
-      <div class="lbl">vagas<br>imediatas</div>
+      <div class="num">4</div>
+      <div class="lbl">hábitos para<br>estudar melhor</div>
     </div>
   </div>
 
   <div class="paper">
     <div class="paper-inner">
-
       <div class="facts">
-        <div class="fact"><div class="k">Órgão</div><div class="v">Secretaria de Educação de Aparecida</div></div>
-        <div class="fact"><div class="k">Escolaridade</div><div class="v">Médio/técnico e superior</div></div>
-        <div class="fact"><div class="k">Remuneração</div><div class="v">R$ 2.825,11 a R$ 4.508,28 · 30h</div></div>
-        <div class="fact"><div class="k">Inscrições</div><div class="v">Até 09/12/2026, às 17h</div></div>
+        <div class="fact"><div class="k">Foco</div><div class="v">Português e edital</div></div>
+        <div class="fact"><div class="k">Ritmo sugerido</div><div class="v">Blocos curtos</div></div>
+        <div class="fact"><div class="k">Prática</div><div class="v">Questões comentadas</div></div>
+        <div class="fact"><div class="k">Revisão</div><div class="v">Lembrar, conferir, repetir</div></div>
       </div>
 
       <div class="article">
-
         <div class="clause">
-          <div class="art">Art. 1º</div>
+          <div class="art">Passo 1</div>
           <div>
-            <h2>Um concurso voltado à rede municipal de ensino</h2>
-            <p>A Prefeitura de Aparecida de Goiânia publicou concurso público para cargos efetivos da <span class="highlight">Secretaria Municipal de Educação</span>. Portanto, este é um certame da área educacional, não um concurso geral para todas as secretarias da Prefeitura. A organização é do Instituto Verbena, ligado à Universidade Federal de Goiás (UFG).</p>
-            <p>O edital prevê <span class="highlight">2.956 vagas para provimento</span> e outras <span class="highlight">14.780 oportunidades em cadastro de reserva</span>. O edital consolidado já incorpora o Edital Complementar nº 01/2026, publicado em 9 de novembro.</p>
+            <h2>Use o edital para escolher o próximo assunto</h2>
+            <p>Marque os tópicos de Língua Portuguesa previstos para o seu cargo. Escolha um assunto por sessão e anote o que já domina e o que ainda precisa praticar. Assim, o estudo fica ligado à prova que você vai fazer.</p>
           </div>
         </div>
-
         <div class="clause">
-          <div class="art">Art. 2º</div>
+          <div class="art">Passo 2</div>
           <div>
-            <h2>Cargos e escolaridade</h2>
-            <p>As oportunidades abrangem três grupos de cargos:</p>
-            <ul>
-              <li><b>Agente Educativo</b> e <b>Auxiliar de Secretaria</b>, para nível médio/técnico;</li>
-              <li><b>Profissional da Educação I (PE-I)</b>, com vagas em Artes, Ciências, Educação Física, Geografia, História, Inglês, Língua Portuguesa, Matemática e Pedagogia, para nível superior.</li>
-            </ul>
-            <p>Confira no edital os requisitos específicos de formação para cada cargo e área antes de fazer a inscrição.</p>
+            <h2>Estude em blocos curtos e com uma meta clara</h2>
+            <p>Antes de começar, defina uma tarefa pequena — por exemplo, revisar concordância e resolver cinco questões. Um bloco de 25 minutos pode ser um bom ponto de partida; ajuste a duração à sua rotina e faça uma pausa entre blocos.</p>
           </div>
         </div>
-
         <div class="clause">
-          <div class="art">Art. 3º</div>
+          <div class="art">Passo 3</div>
           <div>
-            <h2>Salários e jornada</h2>
-            <p>Para jornada de <b>30 horas semanais</b>, o edital informa remuneração de <b>R$ 3.070,76</b> para Agente Educativo, <b>R$ 2.825,11</b> para Auxiliar de Secretaria e <b>R$ 4.508,28</b> para Profissional da Educação I.</p>
+            <h2>Tente lembrar antes de reler</h2>
+            <p>Feche o material e escreva, com suas palavras, as regras e exemplos de que se lembra. Depois confira suas anotações. O que faltou vira uma pista concreta para a próxima revisão.</p>
           </div>
         </div>
-
         <div class="clause">
-          <div class="art">Art. 4º</div>
+          <div class="art">Passo 4</div>
           <div>
-            <h2>Inscrições e taxas</h2>
-            <p>As inscrições são feitas exclusivamente pelo portal do Instituto Verbena/UFG, de <b>9 de novembro a 9 de dezembro de 2026</b>. No último dia, o sistema encerra às <b>17h, horário de Brasília</b>.</p>
-            <ul>
-              <li>R$ 130 para cargos de nível médio/técnico;</li>
-              <li>R$ 150 para cargos de nível superior.</li>
-            </ul>
-            <div class="callout"><b>Atenção:</b> a inscrição e a emissão do boleto terminam às 17h do dia 9 de dezembro. Consulte o edital para requisitos e regras de isenção.</div>
+            <h2>Resolva questões e entenda cada erro</h2>
+            <p>Não pare no gabarito. Identifique qual regra a questão cobra e por que as alternativas estão certas ou erradas. Guarde os erros recorrentes em uma lista curta para retomar em outro dia.</p>
           </div>
         </div>
-
         <div class="clause">
-          <div class="art">Art. 5º</div>
+          <div class="art">Dica</div>
           <div>
-            <h2>Provas e resultado</h2>
-            <p>As provas estão previstas para <b>31 de janeiro de 2027</b>. A divulgação do resultado final está prevista para <b>30 de junho de 2027</b>. Acompanhe possíveis atualizações e comunicados diretamente na página do concurso.</p>
+            <h2>Na gramática, transforme a regra em frase</h2>
+            <p>Exemplos ajudam a enxergar o uso: compare “estou <span class="highlight">meio cansada</span>” com “esperei <span class="highlight">meia hora</span>”. A primeira forma significa “um pouco”; a segunda, metade de uma hora.</p>
           </div>
         </div>
-
       </div>
 
       <div class="sources">
-        <div class="k">Fontes oficiais</div>
+        <div class="k">Referências úteis de Português</div>
         <ul>
-          <li><a href="https://aparecida.go.gov.br/publicado-edital-do-concurso-da-educacao-de-aparecida-de-goiania" target="_blank" rel="noopener noreferrer">Prefeitura de Aparecida de Goiânia — notícia oficial do concurso</a></li>
-          <li><a href="https://sistemas.institutoverbena.ufg.br/2026/concurso-prefeitura-aparecida-de-goiania-educacao/" target="_blank" rel="noopener noreferrer">Instituto Verbena/UFG — página oficial do concurso e atualizações</a></li>
-          <li><a href="https://sistemas.institutoverbena.ufg.br/2026/concurso-prefeitura-aparecida-de-goiania-educacao/sistema/arquivos/editais/Edital_Consolidado_Concurso_P%C3%BAblico_da_Secretaria_de_Educa%C3%A7%C3%A3o_da_Prefeitura_Municipal_de_Aparecida_de_Goi%C3%A2nia-GO.pdf" target="_blank" rel="noopener noreferrer">Edital de abertura consolidado com o complemento nº 01/2026 (PDF)</a></li>
+          <li><a href="https://www12.senado.leg.br/manualdecomunicacao/estilos/adjunto-adverbial-deslocado" target="_blank" rel="noopener noreferrer">Senado Federal — Manual de Comunicação: adjunto adverbial deslocado</a></li>
+          <li><a href="https://www.academia.org.br/artigos/vamos-falar-serio" target="_blank" rel="noopener noreferrer">Academia Brasileira de Letras — artigo sobre usos da língua</a></li>
         </ul>
       </div>
-
     </div>
   </div>
 
   <div class="upcoming">
     <div class="upcoming-inner">
-      <h3>Mais conteúdos do Pense Concurso</h3>
-      <p>O perfil publica dicas rápidas de Língua Portuguesa para concurseiros, com gramática, redação, interpretação de textos e resolução comentada de questões.</p>
+      <h3>Conteúdos curtos para sua revisão</h3>
+      <p>Dicas diretas de Língua Portuguesa e hábitos de estudo para quem está se preparando para concursos públicos.</p>
       <div class="ghost-list">
         <a class="ghost-row article-link" href="adverbios-concursos.html"><span>Português · 4 armadilhas com menos, meio, bastante e vírgula</span><span>Leia →</span></a>
-        <a class="ghost-row article-link" href="inss2026.html"><span>Concursos federais · INSS: sem inscrições abertas; alerta contra golpes</span><span>Leia →</span></a>
+        <a class="ghost-row article-link" href="estudo-concursos.html"><span>Estudo · Uma rotina curta de revisão para concursos</span><span>Leia →</span></a>
         <div class="ghost-row"><span>Em breve</span><span>Novo post</span></div>
       </div>
+
+      <section class="jobs" aria-labelledby="jobs-title">
+        <div class="jobs-head">
+          <div>
+            <p class="jobs-k">Oportunidades em Aparecida e região</p>
+            <h3 id="jobs-title">Vagas de emprego</h3>
+            <p class="jobs-intro">Um recorte informativo de oportunidades divulgadas pelo SIME de Aparecida de Goiânia, separado das dicas de Português e estudo.</p>
+          </div>
+          <div class="jobs-count"><strong>2.074</strong><span>vagas no boletim<br>de 23/11/2026</span></div>
+        </div>
+        <p class="jobs-update">Este total reflete o boletim publicado em 23/11/2026, não uma contagem em tempo real. As vagas podem mudar ou ser preenchidas; confirme a disponibilidade no portal oficial antes de se candidatar.</p>
+        <ul class="jobs-roles" aria-label="Destaques do boletim de 23 de novembro de 2026">
+          <li><span>Auxiliar de logística</span><strong>608</strong></li>
+          <li><span>Auxiliar de produção</span><strong>186</strong></li>
+          <li><span>Operador de telemarketing</span><strong>150</strong></li>
+          <li><span>Auxiliar de limpeza</span><strong>109</strong></li>
+          <li><span>Carreteiro (motorista de caminhão-carreta)</span><strong>100</strong></li>
+          <li><span>Auxiliar de costureira</span><strong>50</strong></li>
+          <li><span>Motorista entregador</span><strong>50</strong></li>
+        </ul>
+        <div class="jobs-actions">
+          <a href="https://trabalho.aparecida.go.gov.br" target="_blank" rel="noopener noreferrer">Consultar vagas atualizadas no SIME →</a>
+          <a href="https://aparecida.go.gov.br/empresas-de-aparecida-ofertam-mais-de-2-mil-vagas-de-emprego-nesta-semana-pelo-sime" target="_blank" rel="noopener noreferrer">Abrir boletim da Prefeitura (23/11/2026) →</a>
+        </div>
+        <div class="jobs-sine">
+          <h4>Outros canais oficiais</h4>
+          <div class="jobs-links">
+            <p><a href="https://www.gov.br/pt-br/servicos/buscar-emprego-no-sistema-nacional-de-emprego-sine" target="_blank" rel="noopener noreferrer">Buscar emprego pelo SINE federal</a><br><span>O próprio trabalhador consulta vagas conforme seu perfil cadastrado; a consulta personalizada exige acesso Gov.br.</span></p>
+            <p><a href="https://www.goiania.go.gov.br/sing_servicos/cadastro-para-vagas-de-emprego/" target="_blank" rel="noopener noreferrer">Cadastro para vagas de emprego em Goiânia</a><br><span>Informações da Prefeitura sobre cadastro e atendimento municipal.</span></p>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
   <footer>
-    <span>pense_concurso — dicas rápidas de Língua Portuguesa para concursos</span>
-    <span>Consulte sempre o edital oficial antes de se inscrever</span>
+    <span>Dica Clara — Português e estudo para concursos</span>
+    <span>Use o edital oficial como guia da sua preparação</span>
     <span>© 2026 Ivan Moreira de Araujo · <a href="https://www.tiktok.com/@penseconcurso" target="_blank" rel="noopener noreferrer">TikTok @penseconcurso</a></span>
   </footer>
-
 </body>
 </html>

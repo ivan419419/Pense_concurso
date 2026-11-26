@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma rotina curta de revisão para concursos — Dica Clara</title>
+    <meta name="description" content="Um roteiro simples para organizar uma sessão de estudo, praticar questões e revisar conteúdos para concursos.">
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #f5f0eb;
+            color: #1e1e1e;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        a { color: inherit; }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #1a1a1a;
+        }
+        .header .tagline {
+            font-size: 0.9rem;
+            color: #555;
+            font-style: italic;
+            margin-top: 4px;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 5px 16px;
+            font-size: 0.8rem;
+            color: #777;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .tags span {
+            display: inline-block;
+            background: #eae5df;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin: 0 5px 5px 0;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .categoria {
+            font-size: 1rem;
+            margin: 0 0 5px;
+            color: #8a6a22;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .article-title {
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #1a1a1a;
+            line-height: 1.25;
+        }
+        .subtitulo {
+            color: #555;
+            font-size: 0.98rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+        .byline {
+            font-size: 0.8rem;
+            color: #888;
+            margin: 0 0 22px;
+        }
+        p { margin: 0 0 16px; }
+        h2 {
+            font-size: 1.5rem;
+            margin: 28px 0 10px;
+            color: #1a1a1a;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 10px;
+            color: #2c3e50;
+        }
+        .exemplo {
+            background: #faf6f0;
+            border-left: 5px solid #c99a3b;
+            padding: 13px 18px;
+            margin: 15px 0 18px;
+            border-radius: 0 8px 8px 0;
+        }
+        .exemplo p { margin: 0 0 7px; }
+        .exemplo p:last-child { margin-bottom: 0; }
+        .exemplo .evite strong { color: #a23b2e; }
+        .exemplo .use strong { color: #2f6f63; }
+        .destaque {
+            background: #faf6f0;
+            border-left: 6px solid #c0392b;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .resumo {
+            background: #fcf6ec;
+            padding: 16px 20px;
+            border-radius: 8px;
+            border: 1px solid #e0d8d0;
+            margin: 22px 0;
+        }
+        .resumo h3 { margin-top: 0; }
+        .resumo ul { margin: 8px 0 0 20px; }
+        .fontes {
+            border-top: 1px solid #ddd;
+            padding-top: 16px;
+            margin-top: 28px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .fontes h2 {
+            font-size: 1.1rem;
+            margin: 0 0 8px;
+            color: #2c3e50;
+        }
+        .fontes ul { padding-left: 20px; }
+        .fontes li { margin-bottom: 7px; }
+        .fontes a { color: #2c3e50; }
+        .comentario-cta {
+            background: #faf6f0;
+            padding: 15px 18px;
+            border-radius: 8px;
+            margin: 25px 0 15px;
+        }
+        .botao-voltar {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 30px 0 20px;
+        }
+        .botao-voltar:hover { background: #c0392b; }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 16px; }
+            .header h1 { font-size: 1.8rem; }
+            .article-title { font-size: 1.55rem; }
+            h2 { font-size: 1.35rem; }
+            .meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Dica Clara</h1>
+        <div class="tagline">Português para concursos · estudo prático</div>
+    </header>
+    <main>
+        <div class="meta">
+            <span>Brasil · Preparação para concursos</span>
+            <span>Edição digital · 26 de novembro de 2026</span>
+        </div>
+        <div class="tags" aria-label="Temas da matéria">
+            <span>Estudo</span>
+            <span>Concursos públicos</span>
+            <span>Revisão</span>
+        </div>
+        <article>
+            <p class="categoria">Estratégia de estudo</p>
+            <h2 class="article-title">Uma rotina curta de revisão para concursos</h2>
+            <p class="subtitulo"><em>Um passo a passo enxuto para estudar um tópico, praticar e decidir o que retomar depois.</em></p>
+            <p class="byline">Por <strong>DICA CLARA</strong> · 26 de novembro de 2026</p>
+
+            <p>Quando o tempo é limitado, ajuda começar com uma tarefa bem definida. Em vez de “estudar Português”, escolha algo observável: revisar um ponto de concordância, ler um trecho do material e resolver algumas questões daquele assunto.</p>
+
+            <section aria-labelledby="planejar">
+                <h3 id="planejar">1. Escolha um tópico do edital</h3>
+                <p>Consulte o edital do seu cargo e selecione um conteúdo específico. Anote em uma linha o que pretende concluir hoje. Isso reduz a chance de passar a sessão inteira alternando entre materiais sem terminar uma tarefa.</p>
+                <div class="exemplo">
+                    <p><strong>Meta vaga:</strong> estudar gramática.</p>
+                    <p><strong>Meta concreta:</strong> revisar concordância verbal e resolver cinco questões do tema.</p>
+                </div>
+            </section>
+
+            <section aria-labelledby="estudar">
+                <h3 id="estudar">2. Faça um bloco focado</h3>
+                <p>Separe o material necessário, silencie distrações e estude por um período que caiba na sua rotina. Se ajudar, experimente 25 minutos de foco e uma pausa breve; não é uma regra universal — ajuste o ritmo ao seu contexto.</p>
+                <p>Durante o bloco, registre dúvidas específicas em vez de interromper a cada poucos minutos para pesquisar assuntos paralelos.</p>
+            </section>
+
+            <section aria-labelledby="recordar">
+                <h3 id="recordar">3. Recupere o conteúdo de memória</h3>
+                <p>Feche o livro ou a tela e escreva os pontos principais que lembra. Depois, compare com o material e corrija o que ficou incompleto. Em Português, tente criar um exemplo próprio para cada regra.</p>
+                <div class="exemplo">
+                    <p><strong>Pergunta para revisar:</strong> “Quando ‘meio’ significa ‘um pouco’, ele varia?”</p>
+                    <p><strong>Resposta curta:</strong> não — nesse uso, é advérbio: “ela ficou meio nervosa”.</p>
+                </div>
+            </section>
+
+            <section aria-labelledby="questoes">
+                <h3 id="questoes">4. Resolva questões e analise os erros</h3>
+                <p>Resolva algumas questões do assunto e confira o raciocínio, não apenas a alternativa. Se errar, anote a regra envolvida e o motivo da confusão. Uma lista pequena de erros recorrentes pode orientar a próxima revisão.</p>
+            </section>
+
+            <section aria-labelledby="retomar">
+                <h3 id="retomar">5. Marque quando vai retomar</h3>
+                <p>Agende uma nova revisão em outro dia e volte ao tema antes de esquecê-lo por completo. Use suas anotações e questões erradas para decidir se precisa reler a explicação ou se já pode avançar.</p>
+            </section>
+
+            <div class="resumo">
+                <h3>Roteiro para a próxima sessão</h3>
+                <ul>
+                    <li>Escolha um tópico que esteja no edital.</li>
+                    <li>Defina uma tarefa pequena e um tempo de foco realista.</li>
+                    <li>Tente lembrar a regra antes de consultar o material.</li>
+                    <li>Resolva questões e registre por que errou.</li>
+                    <li>Marque uma data para retomar o conteúdo.</li>
+                </ul>
+            </div>
+
+            <p class="comentario-cta"><strong>Comece pelo próximo passo possível.</strong> Uma sessão simples, concluída com atenção, é melhor do que um plano enorme que não cabe na sua rotina.</p>
+        </article>
+        <div style="text-align: center; margin: 25px 0 10px;">
+            <a href="index.html" class="botao-voltar">← Voltar à página inicial</a>
+        </div>
+        <p style="text-align: center; margin: 0 0 18px;"><strong>Leia também:</strong> <a href="adverbios-concursos.html">4 armadilhas de Português para concursos</a></p>
+    </main>
+    <footer>
+        Dica Clara · © 2026 Ivan Moreira de Araujo · <a href="https://www.tiktok.com/@penseconcurso" target="_blank" rel="noopener noreferrer" style="color:#777;">TikTok @penseconcurso</a>
+    </footer>
+</body>
+</html>
